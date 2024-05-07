@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="_JPCards.css">
+{{#1 Japanese}}
+	<script src="_JPCards_Input.js"></script>
+{{/1 Japanese}}
+{{#2 Meaning}}
+	<script src="_JPCards_Meaning.js"></script>
+{{/2 Meaning}}
+
+<article id="card" class="JPCards blue">
+	<header>
+		<h1 class="cenered-replay">{{furigana:1 Japanese}}{{3 Audio}}</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		{{#1 Japanese}}
+			<input type="text" id="input" placeholder="Empty" disabled>
+			<script>
+				checkInput(`{{1 Japanese}}`)
+			</script>
+		{{/1 Japanese}}
+
+		{{#2 Meaning}}
+			<ol id="meaning">
+				{{2 Meaning}}
+			</ol>
+			<script>
+				populateMeaning()
+			</script>
+		{{/2 Meaning}}
+		
+		{{#4 Info}}
+			<h4>Info:</h4>
+			<p>{{4 Info}}</p>
+		{{/4 Info}}
+		
+		{{#5 Example}}
+			<h4>Example:</h4>
+			<blockquote>
+				<p class="cenered-replay">{{furigana:5 Example}}{{7 Example Audio}}</p>
+				
+				{{#6 Example Meaning}}
+					<br><i>"{{6 Example Meaning}}"</i>
+				{{/6 Example Meaning}}
+			</blockquote>
+		{{/5 Example}}
+		
+	</main>
+</article>

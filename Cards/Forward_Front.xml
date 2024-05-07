@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="_JPCards.css">
+
+<article id="card" class="JPCards orange hideFurigana">
+	<header>
+		<h1 class="cenered-replay">{{furigana:1 Japanese}}</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		<i class="faded">Click <b>'Show answer'</b> to view answer.</i>
+	</main>
+</article>

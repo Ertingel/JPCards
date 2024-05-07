@@ -1,0 +1,589 @@
+.nightMode .JPCards {
+  --text-color: oklch(100% 0 0);
+  --text-gray: oklch(100% 0 0 / 0.5);
+  --link-color: oklch(77% 0.12 243);
+  --visited-color: oklch(77% 0.12 300);
+  --dark-background: oklch(16% 0 0);
+  --normal-background: oklch(20% 0 0);
+  --light-background: oklch(25% 0 0);
+  --tooltip-background: oklch(25% 0 0 / 0.8);
+  --hr-background: oklch(100% 0 0 / 0.15);
+  --glow-color: oklch(80% 0 0 / 0.4);
+  --acent-color: oklch(70% 0 0);
+  --acent-gray: oklch(70% 0 0 / 0.65);
+}
+.nightMode .JPCards.gray, .nightMode .JPCards .gray {
+  --acent-color: oklch(70% 0 0);
+  --acent-gray: oklch(70% 0 0 / 0.65);
+}
+.nightMode .JPCards.red, .nightMode .JPCards .red {
+  --acent-color: oklch(70% 0.2 30);
+  --acent-gray: oklch(70% 0.2 30 / 0.65);
+}
+.nightMode .JPCards.orange, .nightMode .JPCards .orange {
+  --acent-color: oklch(70% 0.2 60);
+  --acent-gray: oklch(70% 0.2 60 / 0.65);
+}
+.nightMode .JPCards.orange-yellow, .nightMode .JPCards .orange-yellow {
+  --acent-color: oklch(80% 0.2 70);
+  --acent-gray: oklch(80% 0.2 70 / 0.65);
+}
+.nightMode .JPCards.yellow, .nightMode .JPCards .yellow {
+  --acent-color: oklch(84% 0.2 90);
+  --acent-gray: oklch(84% 0.2 90 / 0.65);
+}
+.nightMode .JPCards.green, .nightMode .JPCards .green {
+  --acent-color: oklch(70% 0.2 135);
+  --acent-gray: oklch(70% 0.2 135 / 0.65);
+}
+.nightMode .JPCards.blue, .nightMode .JPCards .blue {
+  --acent-color: oklch(70% 0.2 245);
+  --acent-gray: oklch(70% 0.2 245 / 0.65);
+}
+.nightMode .JPCards.purple, .nightMode .JPCards .purple {
+  --acent-color: oklch(70% 0.2 290);
+  --acent-gray: oklch(70% 0.2 290 / 0.65);
+}
+.nightMode .JPCards.pink, .nightMode .JPCards .pink {
+  --acent-color: oklch(70% 0.2 335);
+  --acent-gray: oklch(70% 0.2 335 / 0.65);
+}
+
+.JPCards {
+  --card-width: 22em;
+  color: var(--text-color);
+  --rem: min(calc(100vw / (22 + 1)), calc(100vh / 35));
+  font-size: var(--rem);
+  line-height: 1.8;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --text-color: oklch(0% 0 0);
+  --text-gray: oklch(0% 0 0 / 0.5);
+  --link-color: oklch(60% 0.15 243.53);
+  --visited-color: oklch(60% 0.2 300);
+  --dark-background: oklch(100% 0 0);
+  --normal-background: oklch(100% 0 0);
+  --light-background: oklch(95% 0 0);
+  --tooltip-background: oklch(100% 0 0 / 0.7);
+  --hr-background: oklch(0% 0 0 / 0.15);
+  --glow-color: oklch(20% 0 0 / 0.4);
+  --acent-color: oklch(60% 0 0);
+  --acent-gray: oklch(60% 0 0 / 0.65);
+  /*
+  <label for="toggle" class="toggle-switch">
+  	<input type="checkbox" id="toggle" />
+  </label>
+  */
+}
+.JPCards.gray, .JPCards .gray {
+  --acent-color: oklch(60% 0 0);
+  --acent-gray: oklch(60% 0 0 / 0.65);
+}
+.JPCards.red, .JPCards .red {
+  --acent-color: oklch(60% 0.2 30);
+  --acent-gray: oklch(60% 0.2 30 / 0.65);
+}
+.JPCards.orange, .JPCards .orange {
+  --acent-color: oklch(65% 0.2 60);
+  --acent-gray: oklch(65% 0.2 60 / 0.65);
+}
+.JPCards.orange-yellow, .JPCards .orange-yellow {
+  --acent-color: oklch(75% 0.2 70);
+  --acent-gray: oklch(75% 0.2 70 / 0.65);
+}
+.JPCards.yellow, .JPCards .yellow {
+  --acent-color: oklch(80% 0.2 90);
+  --acent-gray: oklch(80% 0.2 90 / 0.65);
+}
+.JPCards.green, .JPCards .green {
+  --acent-color: oklch(60% 0.2 135);
+  --acent-gray: oklch(60% 0.2 135 / 0.65);
+}
+.JPCards.blue, .JPCards .blue {
+  --acent-color: oklch(60% 0.2 245);
+  --acent-gray: oklch(60% 0.2 245 / 0.65);
+}
+.JPCards.purple, .JPCards .purple {
+  --acent-color: oklch(60% 0.2 290);
+  --acent-gray: oklch(60% 0.2 290 / 0.65);
+}
+.JPCards.pink, .JPCards .pink {
+  --acent-color: oklch(60% 0.2 335);
+  --acent-gray: oklch(60% 0.2 335 / 0.65);
+}
+.JPCards h1 {
+  font-size: 2em;
+}
+.JPCards h2 {
+  font-size: 1.5em;
+}
+.JPCards h3 {
+  font-size: 1.25em;
+}
+.JPCards h4 {
+  font-size: 1.125em;
+}
+.JPCards h5 {
+  font-size: 1.1em;
+}
+.JPCards h6 {
+  font-size: 1em;
+}
+.JPCards h1,
+.JPCards h2,
+.JPCards h3,
+.JPCards h4,
+.JPCards h5,
+.JPCards h6,
+.JPCards p,
+.JPCards b,
+.JPCards i,
+.JPCards strong {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+.JPCards h1,
+.JPCards h2,
+.JPCards h3,
+.JPCards h4,
+.JPCards h5,
+.JPCards h6,
+.JPCards b,
+.JPCards strong {
+  color: var(--acent-color);
+  font-weight: bold;
+}
+.JPCards .faded {
+  color: var(--text-gray);
+}
+.JPCards .faded b, .JPCards .faded strong {
+  color: var(--acent-gray);
+}
+.JPCards a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+.JPCards a:hover {
+  text-decoration: underline;
+}
+.JPCards a:visited {
+  color: var(--visited-color);
+}
+.JPCards ol,
+.JPCards ul {
+  margin: 0;
+  padding-left: 1.5em;
+}
+.JPCards input,
+.JPCards button,
+.JPCards select,
+.JPCards textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.25em 0.5em;
+  color: var(--text-color);
+  background-color: var(--light-background);
+  border: 0.1em solid var(--text-gray);
+  border-radius: 0.25em;
+  outline: none;
+  font: inherit;
+  font-size: 1em;
+  transition: border-color 0.2s;
+}
+.JPCards input:focus,
+.JPCards button:focus,
+.JPCards select:focus,
+.JPCards textarea:focus {
+  border-color: var(--acent-color);
+}
+.JPCards textarea {
+  max-width: 100%;
+  min-height: 2.7em;
+  resize: vertical;
+  text-wrap: nowrap;
+  white-space: pre;
+  overflow: scroll;
+}
+.JPCards button,
+.JPCards input[type=button] {
+  color: var(--normal-background);
+  background-color: var(--acent-color);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s, background-color 0.2s;
+}
+.JPCards button:hover, .JPCards button:focus,
+.JPCards input[type=button]:hover,
+.JPCards input[type=button]:focus {
+  transform: scale(1.05, 1.1);
+}
+.JPCards button:active,
+.JPCards input[type=button]:active {
+  color: var(--normal-background);
+  background-color: var(--text-color);
+  transform: scale(0.95, 0.9);
+}
+.JPCards button:active *,
+.JPCards input[type=button]:active * {
+  color: var(--text-color);
+}
+.JPCards button *,
+.JPCards input[type=button] * {
+  color: var(--normal-background);
+}
+.JPCards input::-moz-placeholder {
+  color: var(--text-gray);
+  font-style: italic;
+}
+.JPCards input::placeholder {
+  color: var(--text-gray);
+  font-style: italic;
+}
+.JPCards .toggle-switch {
+  display: block;
+  position: relative;
+  padding: 0;
+  width: 4em;
+  height: 2em;
+  background-color: var(--glow-color);
+  border-radius: 0.5em;
+  transition: background-color 0.2s;
+}
+.JPCards .toggle-switch > input[type=checkbox] {
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  inset: 0;
+}
+.JPCards .toggle-switch::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 1.8em;
+  top: 0.2em;
+  bottom: 0.2em;
+  left: 0.2em;
+  background-color: var(--light-background);
+  border-radius: 0.3em;
+  transition: left 0.2s;
+}
+.JPCards .toggle-switch:has(input[type=checkbox]:checked) {
+  background-color: var(--acent-color);
+}
+.JPCards .toggle-switch:has(input[type=checkbox]:checked)::after {
+  left: 2em;
+}
+.JPCards blockquote,
+.JPCards code {
+  margin: 0;
+  padding: 0.5em;
+  background-color: var(--light-background);
+  border: solid 0.1em var(--glow-color);
+  border-radius: 0.25em;
+}
+.JPCards code {
+  display: block;
+  max-height: 90vh;
+  white-space: nowrap;
+  overflow: scroll;
+}
+.JPCards img,
+.JPCards picture,
+.JPCards video,
+.JPCards canvas,
+.JPCards svg {
+  display: block;
+  max-width: 100%;
+}
+.JPCards ruby rt {
+  font-size: 0.5em;
+  margin-bottom: -0.6em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.JPCards .replay-button {
+  position: relative;
+  padding: 0.175em;
+  margin-bottom: 0.2em;
+  font-size: 0.8em;
+  border: 0.12em solid var(--text-color);
+  border-radius: 50%;
+  outline: none;
+  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+.JPCards .replay-button::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 0.866em;
+  height: 1em;
+  margin-left: 0.133em;
+  font-size: 0.65em;
+  border-style: solid;
+  border-width: 0.5em 0 0.5em 0.866em;
+  border-color: transparent transparent transparent var(--text-color);
+}
+.JPCards .replay-button:focus {
+  transform: scale(1.1);
+}
+.JPCards .replay-button:hover {
+  transform: scale(1.2);
+}
+.JPCards .replay-button:active {
+  transform: scale(0.9);
+}
+.JPCards .replay-button * {
+  position: absolute;
+  display: none;
+}
+.JPCards .centered-text {
+  margin-inline: 0;
+  text-align: center;
+}
+.JPCards .text-color {
+  color: var(--text-color);
+}
+.JPCards .cenered-replay {
+  display: inline-block;
+  position: relative;
+  padding-right: 0.2em;
+  margin-right: 1em;
+  /*margin-right: auto;*/
+}
+.JPCards .cenered-replay .replay-button {
+  display: flex;
+  position: absolute;
+  top: calc(50% - 0.5em);
+  left: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div#_mark,
+div#_flag {
+  display: none;
+}
+
+div#qa {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: oklch(0% 0 0);
+  background-color: oklch(100% 0 0);
+}
+
+.nightMode div#qa {
+  color: oklch(100% 0 0);
+  background-color: oklch(0% 0 0);
+}
+
+#card {
+  box-sizing: border-box;
+  width: var(--card-width);
+  margin: 3em 0;
+  border-radius: 0.25em;
+  box-shadow: 0 0 1em var(--glow-color), 0 0 0.1em var(--glow-color);
+}
+#card > * {
+  padding: 1em 1em;
+}
+#card .tag {
+  position: relative;
+  display: inline-block;
+  padding-inline: 0.4em;
+  z-index: 0;
+  color: var(--normal-background);
+  background-color: var(--acent-color);
+  border-radius: 0.25em;
+  line-height: 1.4;
+  text-wrap: nowrap;
+  white-space: nowrap;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 0.2s;
+}
+#card .tag:hover {
+  transform: scale(1.1);
+}
+#card > header {
+  position: relative;
+  color: var(--normal-background);
+  background-color: var(--acent-color);
+}
+#card > header h1 {
+  font-weight: normal;
+}
+#card > header * {
+  color: var(--normal-background);
+}
+#card > header .replay-button {
+  /*font-size: 2em;*/
+  border-color: var(--normal-background);
+}
+#card > header .replay-button::before {
+  border-left-color: var(--normal-background);
+}
+#card > header > .big-kanji {
+  position: relative;
+  width: -moz-min-content;
+  width: min-content;
+  margin-inline: auto;
+  margin-bottom: 0.1em;
+  font-size: 10em;
+  line-height: 1em;
+  white-space: nowrap;
+  line-break: strict;
+}
+#card > header > .big-kanji > .stroke-count {
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  font-size: 0.2em;
+  transform: translate(-50%, -50%);
+}
+#card > main {
+  padding-bottom: 1.5em;
+  background-color: var(--normal-background);
+}
+#card > main > h1, #card > main > h2, #card > main > h3, #card > main > h4, #card > main > h5, #card > main > h6, #card > main > label {
+  display: block;
+  margin: 0.75em calc(var(--rem) * 0.5) 0 calc(var(--rem) * -0.45);
+}
+#card > main > *:first-child {
+  margin-top: 0;
+}
+#card > main > jpcard-text-input:not(:last-child) {
+  display: block;
+  margin-bottom: 0.5em;
+}
+#card > main > .kanji-readings {
+  display: grid;
+  gap: 0 1em;
+  grid: "kunyomi-title onyomi-title" auto "kunyomi onyomi" auto/1fr 1fr;
+  text-align: center;
+}
+#card > main > .kanji-readings > .kunyomi-title {
+  grid-area: kunyomi-title;
+}
+#card > main > .kanji-readings > .onyomi-title {
+  grid-area: onyomi-title;
+}
+#card > main > .kanji-readings > .kunyomi {
+  grid-area: kunyomi;
+}
+#card > main > .kanji-readings > .onyomi {
+  grid-area: onyomi;
+}
+#card > header input, #card > header select, #card > header textarea, #card > footer input, #card > footer select, #card > footer textarea {
+  background-color: var(--normal-background);
+}
+#card > footer {
+  background-color: var(--light-background);
+}
+#card > *:first-child {
+  border-top-left-radius: 0.25em;
+  border-top-right-radius: 0.25em;
+}
+#card > *:last-child {
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+}
+#card #meaning li {
+  counter-increment: count 1;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.25em;
+}
+#card #meaning li::before {
+  content: counter(count, decimal) ". ";
+  position: absolute;
+  top: 0;
+  right: calc(100% + 0.5em);
+}
+#card #meaning li > .definition {
+  position: relative;
+  flex-grow: 1;
+  z-index: 0;
+}
+#card #meaning li > .definition > span.tooltiped:hover {
+  text-decoration: underline;
+}
+#card #meaning li > .tags {
+  text-align: right;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+#card #input.wrong {
+  --acent-color: oklch(70% 0.2 20);
+  --acent-gray: oklch(70% 0.2 20 / 0.65);
+}
+#card #input.correct {
+  --acent-color: oklch(70% 0.2 135);
+  --acent-gray: oklch(70% 0.2 135 / 0.65);
+}
+#card #input.wrong, #card #input.correct {
+  color: var(--acent-color) !important;
+  border-color: var(--acent-color) !important;
+}
+#card #flower {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  font-size: 1em;
+  line-height: 1em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transform: translate(50%, -50%);
+}
+#card.hideFurigana ruby rt,
+#card .hideFurigana ruby rt {
+  visibility: hidden !important;
+}
+
+.jpcard-tooltip {
+  position: fixed;
+  box-sizing: border-box;
+  top: 0px;
+  right: auto;
+  bottom: auto;
+  left: 0px;
+  z-index: 1000;
+  max-width: calc(100vw - 1rem);
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  color: var(--text-color);
+  background-color: var(--tooltip-background);
+  -webkit-backdrop-filter: blur(0.1rem);
+          backdrop-filter: blur(0.1rem);
+  border: solid 0.1em var(--glow-color);
+  border-radius: 0.25em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}/*# sourceMappingURL=JPCards.css.map */

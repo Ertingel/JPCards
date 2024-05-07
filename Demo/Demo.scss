@@ -1,0 +1,245 @@
+@use "../Media/colors" as colors;
+
+.nightMode.JPCards {
+	@include colors.dark-theme();
+}
+
+:root {
+	background-color: #888;
+
+	--rem: min(calc(100vw / (22 + 1)), calc(100vh / 35));
+	font-size: var(--rem);
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100vh;
+
+	color: var(--text-color);
+	background-color: var(--dark-background);
+
+	display: grid;
+	grid:
+		"demo settings" 1fr
+		/ 1fr var(--card-width);
+
+	overflow: hidden;
+}
+
+jpcard-tooltip {
+	display: none;
+}
+
+#demo {
+	grid-area: demo;
+	position: relative;
+	padding-bottom: 2rem;
+
+	overflow-y: scroll;
+
+	& #demo-area {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+#settings {
+	grid-area: settings;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: var(--card-width);
+	z-index: 200;
+
+	box-shadow: 0 0 1em var(--glow-color), 0 0 0.1em var(--glow-color);
+
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+
+	overflow-y: scroll;
+
+	& > * {
+		padding: 1em 1em;
+
+		& label {
+			display: block;
+			margin: 0.75em calc(var(--rem) * 0.5) 0 calc(var(--rem) * -0.5);
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+
+		& > * {
+			margin-top: 0;
+		}
+
+		& > blockquote {
+			margin: 0.75em -0.5em 0 0.5em;
+		}
+	}
+
+	& > header > h1 > a {
+		color: var(--acent-color) !important;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	& > header,
+	& > footer {
+		background-color: var(--light-background);
+
+		& input,
+		& select,
+		& textarea {
+			background-color: var(--normal-background);
+		}
+	}
+
+	& > main {
+		flex-grow: 1;
+		background-color: var(--normal-background);
+	}
+
+	& #theme {
+		display: inline;
+		width: auto;
+		padding: 0.5em;
+		font-size: 0.5em;
+
+		& .symbol {
+			width: 1.5em;
+			height: 1.5em;
+			font-size: 1em;
+
+			background-color: var(--normal-background);
+			-webkit-mask: url("./icons/Sun.svg") no-repeat center;
+			mask: url("./icons/Sun.svg") no-repeat center;
+			mask-size: contain;
+		}
+
+		&:hover,
+		&:focus {
+			transform: scale(1.1);
+		}
+
+		&:active {
+			transform: scale(0.9);
+		}
+	}
+}
+
+button#toggle-side {
+	position: fixed;
+
+	bottom: 1rem;
+	left: calc(50% - var(--card-width) / 2);
+	width: auto;
+	z-index: 100;
+
+	box-shadow: 0 0 1rem oklch(20% 0 0 / 0.4), 0 0 0.1rem oklch(20% 0 0 / 0.4);
+
+	transform: translateX(-50%) scale(1, 1) !important;
+
+	&:hover,
+	&:focus {
+		transform: translateX(-50%) scale(1.05, 1.1) !important;
+	}
+
+	&:active {
+		transform: translateX(-50%) scale(0.95, 0.9) !important;
+	}
+}
+
+button#toggle-settings {
+	display: none;
+
+	position: fixed !important;
+	top: 0.5rem;
+	right: 0.5rem;
+	padding: 0.75rem;
+	width: auto;
+	z-index: 300;
+
+	background-color: #0008 !important;
+	border-radius: 0.75rem;
+
+	&:hover,
+	&:focus {
+		transform: scale(1.1);
+	}
+
+	&:active {
+		transform: scale(0.9);
+	}
+
+	& img {
+		width: 2rem !important;
+	}
+}
+
+.flex-row {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 1em;
+}
+
+body.display-settings button#toggle-settings img.open,
+body:not(.display-settings) button#toggle-settings img.close {
+	display: none !important;
+}
+
+@media screen and (max-width: 140vh) {
+	body {
+		grid:
+			"demo settings" 1fr
+			/ 1fr 0;
+	}
+
+	#demo {
+		margin-left: 0;
+	}
+
+	#settings {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: calc(100% + 1rem);
+		width: 100vw;
+
+		transition: left 0.2s ease-in-out;
+	}
+
+	body.display-settings > #settings {
+		left: 0;
+	}
+
+	button#toggle-side {
+		left: 50%;
+	}
+
+	button#toggle-settings {
+		display: block;
+	}
+}
+
+.nightMode {
+	#settings {
+		& #theme {
+			& .symbol {
+				-webkit-mask: url("./icons/Moon.svg") no-repeat center;
+				mask: url("./icons/Moon.svg") no-repeat center;
+				mask-size: contain;
+			}
+		}
+	}
+}

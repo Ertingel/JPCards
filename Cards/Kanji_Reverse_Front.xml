@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="_JPCards.css">
+
+<article id="card" class="JPCards purple hideFurigana">
+	<header>
+		<h1 class="big-kanji">
+			?
+		</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		{{#2 Meaning}}
+			<h1 class="centered-text">{{2 Meaning}}</h1>
+		{{/2 Meaning}}
+		
+		<i class="faded">Click <b>'Show answer'</b> to view answer.</i>
+	</main>
+</article>

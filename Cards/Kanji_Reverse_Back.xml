@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="_JPCards.css">
+
+<article id="card" class="JPCards purple">
+	<header>
+		<h1 class="big-kanji">
+			{{1 Kanji}}
+			{{#3 Stroke Count}}
+				<p class="stroke-count">{{3 Stroke Count}}</p>
+			{{/3 Stroke Count}}
+		</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		{{#2 Meaning}}
+			<h1 class="centered-text">{{2 Meaning}}</h1>
+		{{/2 Meaning}}
+
+		<div class="kanji-readings">
+			{{#5 Kunyomi}}
+				<b class="kunyomi-title">Kunyomi</b>
+				<p class="kunyomi">{{5 Kunyomi}}</p>
+			{{/5 Kunyomi}}
+
+			{{#6 Onyomi}}
+				<b class="onyomi-title">Onyomi</b>
+				<p class="onyomi">{{6 Onyomi}}</p>
+			{{/6 Onyomi}}
+		</div>
+
+		{{#4 Components}}
+			<p><b>Components:</b> {{4 Components}}</p>
+		{{/4 Components}}
+
+		{{#7 Memonic}}
+			<blockquote>
+				<p>{{7 Memonic}}</p>
+			</blockquote>
+		{{/7 Memonic}}
+	</main>
+</article>

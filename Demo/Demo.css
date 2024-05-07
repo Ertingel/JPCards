@@ -1,0 +1,235 @@
+.nightMode.JPCards {
+  --text-color: oklch(100% 0 0);
+  --text-gray: oklch(100% 0 0 / 0.5);
+  --link-color: oklch(77% 0.12 243);
+  --visited-color: oklch(77% 0.12 300);
+  --dark-background: oklch(16% 0 0);
+  --normal-background: oklch(20% 0 0);
+  --light-background: oklch(25% 0 0);
+  --tooltip-background: oklch(25% 0 0 / 0.8);
+  --hr-background: oklch(100% 0 0 / 0.15);
+  --glow-color: oklch(80% 0 0 / 0.4);
+  --acent-color: oklch(70% 0 0);
+  --acent-gray: oklch(70% 0 0 / 0.65);
+}
+.nightMode.JPCards.gray, .nightMode.JPCards .gray {
+  --acent-color: oklch(70% 0 0);
+  --acent-gray: oklch(70% 0 0 / 0.65);
+}
+.nightMode.JPCards.red, .nightMode.JPCards .red {
+  --acent-color: oklch(70% 0.2 30);
+  --acent-gray: oklch(70% 0.2 30 / 0.65);
+}
+.nightMode.JPCards.orange, .nightMode.JPCards .orange {
+  --acent-color: oklch(70% 0.2 60);
+  --acent-gray: oklch(70% 0.2 60 / 0.65);
+}
+.nightMode.JPCards.orange-yellow, .nightMode.JPCards .orange-yellow {
+  --acent-color: oklch(80% 0.2 70);
+  --acent-gray: oklch(80% 0.2 70 / 0.65);
+}
+.nightMode.JPCards.yellow, .nightMode.JPCards .yellow {
+  --acent-color: oklch(84% 0.2 90);
+  --acent-gray: oklch(84% 0.2 90 / 0.65);
+}
+.nightMode.JPCards.green, .nightMode.JPCards .green {
+  --acent-color: oklch(70% 0.2 135);
+  --acent-gray: oklch(70% 0.2 135 / 0.65);
+}
+.nightMode.JPCards.blue, .nightMode.JPCards .blue {
+  --acent-color: oklch(70% 0.2 245);
+  --acent-gray: oklch(70% 0.2 245 / 0.65);
+}
+.nightMode.JPCards.purple, .nightMode.JPCards .purple {
+  --acent-color: oklch(70% 0.2 290);
+  --acent-gray: oklch(70% 0.2 290 / 0.65);
+}
+.nightMode.JPCards.pink, .nightMode.JPCards .pink {
+  --acent-color: oklch(70% 0.2 335);
+  --acent-gray: oklch(70% 0.2 335 / 0.65);
+}
+
+:root {
+  background-color: #888;
+  --rem: min(calc(100vw / (22 + 1)), calc(100vh / 35));
+  font-size: var(--rem);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  color: var(--text-color);
+  background-color: var(--dark-background);
+  display: grid;
+  grid: "demo settings" 1fr/1fr var(--card-width);
+  overflow: hidden;
+}
+
+jpcard-tooltip {
+  display: none;
+}
+
+#demo {
+  grid-area: demo;
+  position: relative;
+  padding-bottom: 2rem;
+  overflow-y: scroll;
+}
+#demo #demo-area {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#settings {
+  grid-area: settings;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: var(--card-width);
+  z-index: 200;
+  box-shadow: 0 0 1em var(--glow-color), 0 0 0.1em var(--glow-color);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-y: scroll;
+}
+#settings > * {
+  padding: 1em 1em;
+}
+#settings > * label {
+  display: block;
+  margin: 0.75em calc(var(--rem) * 0.5) 0 calc(var(--rem) * -0.5);
+}
+#settings > * label:first-child {
+  margin-top: 0;
+}
+#settings > * > * {
+  margin-top: 0;
+}
+#settings > * > blockquote {
+  margin: 0.75em -0.5em 0 0.5em;
+}
+#settings > header > h1 > a {
+  color: var(--acent-color) !important;
+  text-decoration: none;
+}
+#settings > header > h1 > a:hover {
+  text-decoration: underline;
+}
+#settings > header, #settings > footer {
+  background-color: var(--light-background);
+}
+#settings > header input, #settings > header select, #settings > header textarea, #settings > footer input, #settings > footer select, #settings > footer textarea {
+  background-color: var(--normal-background);
+}
+#settings > main {
+  flex-grow: 1;
+  background-color: var(--normal-background);
+}
+#settings #theme {
+  display: inline;
+  width: auto;
+  padding: 0.5em;
+  font-size: 0.5em;
+}
+#settings #theme .symbol {
+  width: 1.5em;
+  height: 1.5em;
+  font-size: 1em;
+  background-color: var(--normal-background);
+  -webkit-mask: url("./icons/Sun.svg") no-repeat center;
+  mask: url("./icons/Sun.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}
+#settings #theme:hover, #settings #theme:focus {
+  transform: scale(1.1);
+}
+#settings #theme:active {
+  transform: scale(0.9);
+}
+
+button#toggle-side {
+  position: fixed;
+  bottom: 1rem;
+  left: calc(50% - var(--card-width) / 2);
+  width: auto;
+  z-index: 100;
+  box-shadow: 0 0 1rem oklch(20% 0 0/0.4), 0 0 0.1rem oklch(20% 0 0/0.4);
+  transform: translateX(-50%) scale(1, 1) !important;
+}
+button#toggle-side:hover, button#toggle-side:focus {
+  transform: translateX(-50%) scale(1.05, 1.1) !important;
+}
+button#toggle-side:active {
+  transform: translateX(-50%) scale(0.95, 0.9) !important;
+}
+
+button#toggle-settings {
+  display: none;
+  position: fixed !important;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.75rem;
+  width: auto;
+  z-index: 300;
+  background-color: rgba(0, 0, 0, 0.5333333333) !important;
+  border-radius: 0.75rem;
+}
+button#toggle-settings:hover, button#toggle-settings:focus {
+  transform: scale(1.1);
+}
+button#toggle-settings:active {
+  transform: scale(0.9);
+}
+button#toggle-settings img {
+  width: 2rem !important;
+}
+
+.flex-row {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1em;
+}
+
+body.display-settings button#toggle-settings img.open,
+body:not(.display-settings) button#toggle-settings img.close {
+  display: none !important;
+}
+
+@media screen and (max-width: 140vh) {
+  body {
+    grid: "demo settings" 1fr/1fr 0;
+  }
+  #demo {
+    margin-left: 0;
+  }
+  #settings {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: calc(100% + 1rem);
+    width: 100vw;
+    transition: left 0.2s ease-in-out;
+  }
+  body.display-settings > #settings {
+    left: 0;
+  }
+  button#toggle-side {
+    left: 50%;
+  }
+  button#toggle-settings {
+    display: block;
+  }
+}
+.nightMode #settings #theme .symbol {
+  -webkit-mask: url("./icons/Moon.svg") no-repeat center;
+  mask: url("./icons/Moon.svg") no-repeat center;
+  -webkit-mask-size: contain;
+          mask-size: contain;
+}/*# sourceMappingURL=Demo.css.map */

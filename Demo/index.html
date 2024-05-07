@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<base href="../" />
+
+		<title>JPCards Demo</title>
+		<link rel="icon" type="image/x-icon" href="/Demo/icons/favicon.png" />
+
+		<link rel="stylesheet" href="Media/JPCards.css" />
+		<link rel="stylesheet" href="Demo/Demo.css" />
+
+		<script src="Media/JPCards_Meaning.js"></script>
+		<script src="Media/JPCards_Input.js"></script>
+
+		<script src="Demo/mustache.min-v4.2.0.js"></script>
+		<script src="Demo/Demo.js"></script>
+	</head>
+	<body class="JPCards">
+		<section id="demo">
+			<demo-area
+				id="demo-area"
+				cardtype="Forward"
+				side="back"
+			></demo-area>
+
+			<button id="toggle-side" onclick="toggleSide(event)">
+				Show Front
+			</button>
+		</section>
+
+		<section id="settings" class="glow normal-background">
+			<header>
+				<h1>
+					<button
+						id="theme"
+						onclick='document.body.classList.toggle("nightMode")'
+					>
+						<div class="symbol"></div>
+						<jpcard-tooltip>
+							Toggle Light/Dark theme.
+						</jpcard-tooltip>
+					</button>
+					<a href="./">JPCards Demo</a>
+				</h1>
+
+				<demo-type></demo-type>
+
+				<label>Field presets:</label>
+				<div class="flex-row">
+					<button onclick="clearFields(event)">
+						Clear
+						<jpcard-tooltip>
+							Clear all card fields.
+						</jpcard-tooltip>
+					</button>
+
+					<button onclick="demoFields(event)">
+						Example
+						<jpcard-tooltip>
+							Fills all the feilds with example text.
+						</jpcard-tooltip>
+					</button>
+				</div>
+			</header>
+
+			<!-- <main id="fields"></main> -->
+			<main>
+				<demo-fields><i>Loading Card...</i></demo-fields>
+			</main>
+		</section>
+
+		<button id="toggle-settings" onclick="toggleSettings(event)">
+			<img class="open" src="./Demo/icons/Menu.svg" />
+			<img class="close" src="./Demo/icons/Close.svg" />
+		</button>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="_JPCards.css">
+{{#1 Japanese}}
+	<script src="_JPCards_Input.js"></script>
+{{/1 Japanese}}
+
+<article id="card" class="JPCards orange hideFurigana">
+	<header>
+		<h1 class="cenered-replay">{{furigana:1 Japanese}}</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		{{#1 Japanese}}
+			<input type="text" id="input" placeholder="Type answer here" autofocus>
+			<script>
+				initInput(`{{1 Japanese}}`)
+			</script>
+		{{/1 Japanese}}
+	</main>
+</article>

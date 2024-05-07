@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="_JPCards.css">
+{{#2 Meaning}}
+	<script src="_JPCards_Input.js"></script>
+{{/2 Meaning}}
+
+<article id="card" class="JPCards green hideFurigana">
+	<header>
+		<h1 class="big-kanji">
+			{{1 Kanji}}
+		</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		{{#2 Meaning}}
+			<h1 class="centered-text">？？？</h1>
+			<input type="text" id="input" placeholder="Type answer here" autofocus>
+			<script>
+				initInput(`{{2 Meaning}}`)
+			</script>
+		{{/2 Meaning}}
+	</main>
+</article>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="79.746544"
+   height="90"
+   viewBox="0 0 0.79746544 0.9"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="Moon.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <sodipodi:namedview
+     id="namedview3215"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     showgrid="false"
+     inkscape:zoom="2.6222222"
+     inkscape:cx="14.682203"
+     inkscape:cy="45.190678"
+     inkscape:window-width="1080"
+     inkscape:window-height="1920"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg5" />
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="" />
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer4"
+     style="display:inline"
+     transform="translate(-0.15253456,-0.05)">
+    <path
+       id="path805"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.5,0.1 A 0.40000001,0.40000001 0 0 0 0.42248047,0.10759766 0.35000002,0.34999999 0 0 1 0.7,0.45 0.35000002,0.34999999 0 0 1 0.35,0.8 0.35000002,0.34999999 0 0 1 0.20251953,0.76740234 0.40000001,0.40000001 0 0 0 0.5,0.9 0.40000001,0.40000001 0 0 0 0.9,0.5 0.40000001,0.40000001 0 0 0 0.5,0.1 Z" />
+  </g>
+</svg>

@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="_JPCards.css">
+{{#2 Meaning}}
+	<script src="_JPCards_Meaning.js"></script>
+{{/2 Meaning}}
+
+<article id="card" class="JPCards blue hideFurigana">
+	<header>
+		<h1 class="cenered-replay">? ? ?</h1>
+		<p id="flower">✿</p>
+	</header>
+	<main>
+		{{#2 Meaning}}
+			<ol id="meaning">
+				{{2 Meaning}}
+			</ol>
+			<script>
+				populateMeaning()
+			</script>
+		{{/2 Meaning}}
+	</main>
+</article>

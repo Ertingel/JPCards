@@ -1,0 +1,133 @@
+{
+	"Forward": {
+		"front": "Forward_Front.xml",
+		"back": "Forward_Back.xml",
+		"preset": "Word",
+		"fields": [
+			"1 Japanese",
+			"2 Meaning",
+			"3 Audio",
+			"4 Info",
+			"5 Example",
+			"6 Example Meaning",
+			"7 Example Audio"
+		]
+	},
+
+	"Reverse": {
+		"front": "Reverse_Front.xml",
+		"back": "Reverse_Back.xml",
+		"preset": "Word",
+		"fields": [
+			"1 Japanese",
+			"2 Meaning",
+			"3 Audio",
+			"4 Info",
+			"5 Example",
+			"6 Example Meaning",
+			"7 Example Audio"
+		]
+	},
+
+	"Kanji": {
+		"front": "Kanji_Front.xml",
+		"back": "Kanji_Back.xml",
+		"preset": "Kanji",
+		"fields": [
+			"1 Kanji",
+			"2 Meaning",
+			"3 Stroke Count",
+			"4 Components",
+			"5 Kunyomi",
+			"6 Onyomi",
+			"7 Memonic"
+		]
+	},
+
+	"Kanji Reverse": {
+		"front": "Kanji_Reverse_Front.xml",
+		"back": "Kanji_Reverse_Back.xml",
+		"preset": "Kanji",
+		"fields": [
+			"1 Kanji",
+			"2 Meaning",
+			"3 Stroke Count",
+			"4 Components",
+			"5 Kunyomi",
+			"6 Onyomi",
+			"7 Memonic"
+		]
+	},
+
+	"Forward (type reading)": {
+		"front": "Forward_(type_reading)_Front.xml",
+		"back": "Forward_(type_reading)_Back.xml",
+		"preset": "Word",
+		"fields": [
+			"1 Japanese",
+			"2 Meaning",
+			"3 Audio",
+			"4 Info",
+			"5 Example",
+			"6 Example Meaning",
+			"7 Example Audio"
+		]
+	},
+
+	"Reverse (type reading)": {
+		"front": "Reverse_(type_reading)_Front.xml",
+		"back": "Reverse_(type_reading)_Back.xml",
+		"preset": "Word",
+		"fields": [
+			"1 Japanese",
+			"2 Meaning",
+			"3 Audio",
+			"4 Info",
+			"5 Example",
+			"6 Example Meaning",
+			"7 Example Audio"
+		]
+	},
+
+	"Kanji (type meaning)": {
+		"front": "Kanji_(type_meaning)_Front.xml",
+		"back": "Kanji_(type_meaning)_Back.xml",
+		"preset": "Kanji",
+		"fields": [
+			"1 Kanji",
+			"2 Meaning",
+			"3 Stroke Count",
+			"4 Components",
+			"5 Kunyomi",
+			"6 Onyomi",
+			"7 Memonic"
+		]
+	},
+
+	"VARIANTS": {
+		"Forward & Reverse": {
+			"Forward & Reverse": "Forward",
+			"Reverse & Forward": "Reverse"
+		},
+
+		"Forward (type reading) & Reverse": {
+			"Forward (type reading) & Reverse": "Forward (type reading)",
+			"Reverse & Forward (type reading)": "Reverse"
+		},
+
+		"Forward & Reverse (type reading)": {
+			"Forward & Reverse (type reading)": "Forward",
+			"Reverse (type reading) & Forward": "Reverse (type reading)"
+		},
+
+		"Forward (type reading) & Reverse (type reading)": {
+			"Forward (type reading) & Reverse (type reading)": "Forward (type reading)",
+			"Reverse (type reading) & Forward (type reading)": "Reverse (type reading)"
+		},
+
+		"Kanji & Kanji Reverse": {
+			"Kanji & Kanji Reverse": "Kanji",
+			"Kanji Reverse & Kanji": "Kanji Reverse"
+		}
+	}
+}
