@@ -8,18 +8,18 @@ JPCards is a collection of custom Anki cards made for learning the japanese lang
 
 ## Demo
 
-JPCards have a interactive demo that can be accessed [here](./).
+JPCards have a interactive demo that can be accessed [here](https://ertingel.github.io/JPCards/Demo/).
 
 ## Download
 
-JPCards can be downloaded [here](./).
+JPCards can be downloaded [here](https://github.com/Ertingel/JPCards/raw/main/JPCards.colpkg).
 
 > [!IMPORTANT]
 > JPCards does not work on AnkiWeb.
 
 ### Install
 
-1. [Download](./) JPCards.colpkg.
+1. Download [JPCards.colpkg](https://github.com/Ertingel/JPCards/raw/main/JPCards.colpkg).
 
 2. In Anki:
 
@@ -81,7 +81,7 @@ The build process is the following:
         }
         ```
 
-3. [Download](./) and extract the project.
+3. Download and extract the [project](https://github.com/Ertingel/JPCards/archive/refs/heads/main.zip).
 
 4. Enter the project folder
 
