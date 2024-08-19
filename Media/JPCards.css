@@ -55,7 +55,7 @@
   --rem: min(calc(100vw / (22 + 1)), calc(100vh / 35));
   font-size: var(--rem);
   line-height: 1.8;
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Noto Sans JP", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   --text-color: oklch(0% 0 0);
   --text-gray: oklch(0% 0 0 / 0.5);
   --link-color: oklch(60% 0.15 243.53);
