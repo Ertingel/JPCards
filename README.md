@@ -92,7 +92,7 @@ The build process is the following:
 7. Done. (You can now create new notes with the JPCards note type)
 
 > [!IMPORTANT]
-> JPCards does not work on AnkiWeb.
+> Text input on JPCards does not work on AnkiWeb.
 
 ## Gallery
 
