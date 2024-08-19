@@ -15,7 +15,7 @@ JPCards have a interactive demo that can be accessed [here](https://ertingel.git
 JPCards can be downloaded [here](https://github.com/Ertingel/JPCards/raw/main/JPCards.colpkg).
 
 > [!IMPORTANT]
-> JPCards does not work on AnkiWeb.
+> Text input on JPCards does not work on AnkiWeb.
 
 ### Install
 
@@ -32,7 +32,7 @@ JPCards can be downloaded [here](https://github.com/Ertingel/JPCards/raw/main/JP
 3. Done. (You can now create new notes with the JPCards note type)
 
 > [!IMPORTANT]
-> JPCards does not work on AnkiWeb.
+> Text input on JPCards does not work on AnkiWeb.
 
 Additional information on importing in Anki can be found [here](https://docs.ankiweb.net/importing/packaged-decks.html).
 
